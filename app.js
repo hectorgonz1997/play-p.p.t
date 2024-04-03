@@ -32,7 +32,7 @@ function play(userOption) {
 
     userImg.src = "img/" + userOption + ".svg";
 
-    resultText.innerHTML = "Chossing!";
+    resultText.innerHTML = "Jugando!";
 
     const interval = setInterval(function(){
         const machineOption = calcMachineOption();
@@ -50,13 +50,13 @@ function play(userOption) {
 
         switch (result) {
             case TIE:
-                resultText.innerHTML = "You have tied!";
+                resultText.innerHTML = "EMPATE!";
                 break;
             case WIN:
-                resultText.innerHTML = "You win!";
+                resultText.innerHTML = "Tu ganas!";
                 break;
             case LOST:
-                resultText.innerHTML = "You lost!";
+                resultText.innerHTML = "Tu pierdes!";
                 break;
         }
         isPlaying = false;
